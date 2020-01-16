@@ -1,0 +1,55 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.body-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-image: url('https://i.imgur.com/YRe1jWf.jpg');
+}
+
+
+.text-30{
+    line-height: 35px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.text-17{
+    font-size: 17px;
+}
+
+.form-label{
+    font-size: 16px!important;
+    color: white!important;
+}
+
+.form-input {
+    position: relative;
+    display: block;
+    padding-left: 20px!important;
+    width: 95%!important;
+    height: 38px!important;
+    background: #ffffff!important;
+    border-radius: 10px!important;
+    font-size: 20px!important;
+    color: #BAB9B9!important;
+}
+
+.form-btn{
+    margin-top: 20px;
+    margin-bottom: -10px;
+    width: 100%!important;
+    height: 35px!important;
+    font-weight: 600;
+    color: rgb(65, 65, 65)!important;
+    background: #BAB9B9!important;
+    border-radius: 10px!important;
+    font-size: 16px!important;
+    line-height: 35px !important;
+    text-align: center!important;
+
+}
