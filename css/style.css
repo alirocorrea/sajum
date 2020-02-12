@@ -498,12 +498,57 @@ option {
     background-color: #d9d9d9;
 }
 
+.form-exp > .form-group {
+    margin-bottom: 0.4rem !important;
+}
 
-.form-exp > div > label{
+.form-exp > div > label {
     line-height: 1 !important;
     font-size: 14px;
     font-weight: 600;
     color: #666666;
+}
+
+.form-exp-check{
+    margin-right: 0px !important;
+}
+
+.form-exp-check > label{
+    line-height: 1 !important;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.form-exp-check > input[type=radio]{
+    height: 20px !important;
+    width: 20px !important;
+    margin: 0px 4px !important;
+}
+
+.form-exp-check > input[type=checkbox]{
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.form-exp-check > input[type=checkbox] + label{
+    margin: 0px 5px;
+}
+
+.btn-form-grey{
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0px 10px;
+    background-color: #a0a0a0 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    box-shadow: 4px 4px rgb(186, 185, 185, 0.45) !important;
+}
+
+.btn-form-grey:hover{
+    color: #ffffff !important;
+    box-shadow: 4px 4px #7c7c7c !important;
+    transform: translateY(2px);
 }
 
 /*HELPERS*/
@@ -551,6 +596,10 @@ option {
 
 .height-30{
     height: 30px !important;
+}
+
+.mt-30{
+    margin-top: 30px !important;
 }
 
 .mt-60{

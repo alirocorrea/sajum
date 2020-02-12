@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SAJUM - Dashboard</title>
+
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!--Imports CSS local-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Font Source Sans-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <!--Navbar-Brand Only Mobile-->
+    <a class="navbar-brand mt-1 ml-2 d-block d-sm-none" href="#">
+      <img src="assets/Logo_SAJUM.svg" height="50" class="d-inline-block align-top float-left mr-2 mt-2">
+    </a>
+    <!--Navbar-Brand-->
+    <a class="navbar-brand mt-1 ml-2 d-none d-sm-block" href="#">
+      <img src="assets/Logo_SAJUM_line.svg" height="100" class="d-inline-block align-top float-left mr-2">
+      <p class="header-text-format">Comisaría de familia<br><span class="text-semibold">Municipio</span></p>
+    </a>
+    <!--Session-->
+    <div class="nav navbar-nav ml-auto">
+      <div class="d-block text-right mt-2">
+        <!--Imagen hidden Only Mobile-->
+        <div class="d-none d-sm-block ">
+          <img class="mr-3" src="assets/escudo.png" height="60" width="60">
+        </div>
+        <!-- Options Session-->
+        <div class="align-middle text-white session-text mt-2">
+          <i class="material-icons d-inline-block align-middle session-icon">settings</i>
+          <i class="material-icons d-inline-block align-middle session-icon">help</i>
+          <p class=" d-inline-block font-weight-bolder">Cerrar sesión</p>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="float-left menu-side-mt">
+    <ul class="nav flex-column">
+      <li class="nav-item menu-side-item">
+        <a class="nav-link active pt-1 pl-2" href="#">
+          <img src="assets/icons/D-39.png" height="60">
+        </a>
+      </li>
+      <li class="nav-item menu-side-item">
+        <a class="nav-link pt-1 pl-2" href="#">
+          <img src="assets/icons/E-39.png" height="60">
+        </a>
+      </li>
+      <li class="nav-item menu-side-item">
+        <a class="nav-link pt-1 pl-2" href="#">
+          <img src="assets/icons/F-39.png" height="60">
+        </a>
+      </li>
+      <li class="nav-item menu-side-item">
+        <a class="nav-link pt-1 pl-2" href="#">
+          <img src="assets/icons/G-39.png" height="60">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- NavMenu -->
+  <div class="mr-3">
+    <ul class="nav justify-content-end text-truncate">
+      <li class="nav-item menu-top-item">
+        <a class="nav-link menu-top-text " href="#">Inicio</a>
+      </li>
+      <li class="nav-item menu-top-item active">
+        <a class="nav-link menu-top-text active" href="#">Procesos</a>
+      </li>
+      <li class="nav-item menu-top-item">
+        <a class="nav-link menu-top-text" href="#">Bitácora</a>
+      </li>
+      <li class="nav-item menu-top-item">
+        <a class="nav-link menu-top-text" href="#">Reportes</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Container-->
+  <div class="ml-100 mr-3">
+    <div class="container-fluid container-section bg-white p-5">
+      <!-- Titulo de la seccion-->
+      <div class="row">
+        <div class="col">
+          <h2 class="title-section d-inline align-top">Expediente #</h2>
+          <div class="d-md-inline-block">
+            <!--Tabla para numeros del expediente-->
+            <div class="table-responsive">
+              <table class="table table-borderless table-sm numero-expediente">
+                <tbody>
+                  <tr>
+                    <!--Numeros-->
+                    <td class="title-section">12</td>
+                    <td class="title-section">123</td>
+                    <td class="title-section">12</td>
+                    <td class="title-section">12</td>
+                    <td class="title-section">12</td>
+                    <td class="title-section">1234</td>
+                    <td class="title-section">12345</td>
+                  </tr>
+                  <tr>
+                    <!--Titulo de los numeros-->
+                    <td class="numero-expediente-subtexto">DEPTO.</td>
+                    <td class="numero-expediente-subtexto">MPIO.</td>
+                    <td class="numero-expediente-subtexto">CO.</td>
+                    <td class="numero-expediente-subtexto">VDA.</td>
+                    <td class="numero-expediente-subtexto">INST.</td>
+                    <td class="numero-expediente-subtexto">AÑO</td>
+                    <td class="numero-expediente-subtexto">CONSECUTIVO</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="title-section-line"></div>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="row mt-4">
+        <!--Seccion-->
+        <div class="col-md-10 pr-0">
+          <!--Titulo del desplegable-->
+          <div class="collapse-title text-truncate">
+            <h1 class="font-size-20 text-semibold">Recepción de la denuncia</h1>
+            <div class="collapse-icon">
+              <span class="collapse-icon-texto">-</span>
+            </div>
+          </div>
+          <div class="collapse-container">
+            <!--Wizard-->
+            <div class="row">
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">1. Datos generales</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">2. Datos denunciante</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">3. Datos víctima</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">4. Datos acudiente</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step active">5. Datos denunciado</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">6. Narración hechos</div>
+              </div>
+              <div class="col-md-3 pr-2 pl-2">
+                <div class="text-truncate wizard-step">7. Actuación comisaría</div>
+              </div>
+            </div>
+            <!--Form-->
+            <div class="mt-4">
+              <h1 class="text-orange text-bold font-size-18">Datos del Denunciado/Solicitado</h1>
+              <form class="form-exp px-3 mt-2">
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="primer_nombre" class="col-sm-auto col-form-label px-0 text-center">Primer nombre</label>
+                  <div class="col-sm-4 px-1">
+                    <input type="text" class="form-control form-control-sm" id="primer_nombre">
+                  </div>
+                  <label for="segundo_nombre" class="col-sm-auto col-form-label px-0 text-center">Segundo nombre</label>
+                  <div class="col-sm px-1">
+                    <input type="text" class="form-control form-control-sm" id="segundo_nombre">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="primer_apellido" class="col-sm-auto col-form-label px-0 text-center">Primer
+                    apellido</label>
+                  <div class="col-sm-4 px-1">
+                    <input type="text" class="form-control form-control-sm" id="primer_apellido">
+                  </div>
+                  <label for="segundo_apellido" class="col-sm-auto col-form-label px-0 text-center">Segundo
+                    apellido</label>
+                  <div class="col-sm px-1">
+                    <input type="text" class="form-control form-control-sm" id="segundo_apellido">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="tipo_documento" class="col-sm-auto col-form-label px-0 text-center">Tipo de documento
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="tipo_documento_rc">RC</label>
+                      <input class="form-check-input " type="radio" name="tipo_documento" id="tipo_documento_rc">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="tipo_documento_ti">TI</label>
+                      <input class="form-check-input" type="radio" name="tipo_documento" id="tipo_documento_ti">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="tipo_documento_cc">CC</label>
+                      <input class="form-check-input" type="radio" name="tipo_documento" id="tipo_documento_cc">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="tipo_documento_pp">PP</label>
+                      <input class="form-check-input" type="radio" name="tipo_documento" id="tipo_documento_pp">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="tipo_documento_ce">CE</label>
+                      <input class="form-check-input" type="radio" name="tipo_documento" id="tipo_documento_ce">
+                    </div>
+                  </div>
+                  <label for="num_documento" class="col-sm-auto col-form-label px-0 text-center">N° de documento</label>
+                  <div class="col-sm px-1">
+                    <input type="text" class="form-control form-control-sm" id="num_documento">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="fecha_nacimiento" class="col-sm-auto col-form-label px-0 text-center">Fecha de
+                    nacimiento</label>
+                  <div class="col-sm-2 px-1">
+                    <input type="date" class="form-control form-control-sm" id="fecha_nacimiento">
+                  </div>
+                  <label for="edad" class="col-sm-auto col-form-label px-0 text-center">Edad</label>
+                  <div class="col-sm-2 px-1">
+                    <select class="form-control form-control-sm" id="edad"></select>
+                  </div>
+                  <label for="lugar_nacimiento" class="col-lg-auto col-form-label px-0 text-center">Lugar de
+                    nacimiento</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="lugar_nacimiento"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="sexo" class="col-sm-auto col-form-label px-0 text-center">Sexo</label>
+                  <div class="col-sm-2 px-1">
+                    <select class="form-control form-control-sm" id="sexo"></select>
+                  </div>
+                  <label for="orientacion_sexual" class="col-sm-auto col-form-label px-0 text-center">Orientación sexual</label>
+                  <div class="col-sm-3 px-1">
+                    <select class="form-control form-control-sm" id="orientacion_sexual"></select>
+                  </div>
+                  <label for="estado_civil" class="col-lg-auto col-form-label px-0 text-center">Estado civil</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="estado_civil"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="madre_cabeza" class="col-sm-auto col-form-label px-0 text-center">Madre cabeza de familia
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="madre_cabeza_si">SI</label>
+                      <input class="form-check-input " type="radio" name="madre_cabeza" id="madre_cabeza_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="madre_cabeza_no">NO</label>
+                      <input class="form-check-input" type="radio" name="madre_cabeza" id="madre_cabeza_no">
+                    </div>
+                  </div>
+                  <label for="embarazada" class="col-sm-auto col-form-label px-0 text-center ml-3">Embarazada
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="embarazada_si">SI</label>
+                      <input class="form-check-input " type="radio" name="embarazada" id="embarazada_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="embarazada_no">NO</label>
+                      <input class="form-check-input" type="radio" name="embarazada" id=embarazada_no">
+                    </div>
+                  </div>
+                </div>
+                 <!--Form ROW-->
+                 <div class="form-group row">
+                  <label for="etnia" class="col-sm-auto col-form-label px-0 text-center">Etnia 
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="etnia_si">SI</label>
+                      <input class="form-check-input " type="radio" name="etnia" id="etnia_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="etnia_no">NO</label>
+                      <input class="form-check-input" type="radio" name="etnia" id="etnia_no">
+                    </div>
+                  </div>
+                  <label for="cual_etnia" class="col-lg-auto col-form-label px-0 text-center">Cuál</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="cual_etnia"></select>
+                  </div>
+                 </div>
+                 <!--Form ROW-->
+                 <div class="form-group row">
+                  <label for="discapacidad" class="col-sm-auto col-form-label px-0 text-center">Discapacidad 
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="discapacidad_si">SI</label>
+                      <input class="form-check-input " type="radio" name="discapacidad" id="discapacidad_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="discapacidad_no">NO</label>
+                      <input class="form-check-input" type="radio" name="discapacidad" id="discapacidad_no">
+                    </div>
+                  </div>
+                  <label for="tipo_discapacidad" class="col-lg-auto col-form-label px-0 text-center">Tipo de discapacidad</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="tipo_discapacidad"></select>
+                  </div>
+                 </div>
+                 <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="direccion_residencia" class="col-sm-auto col-form-label px-0 text-center">Dirección de residencia</label>
+                  <div class="col-sm-5 px-1">
+                    <input type="text" class="form-control form-control-sm" id="direccion_residencia">
+                  </div>
+                  <label for="barrio" class="col-sm-auto col-form-label px-0 text-center">Barrio</label>
+                  <div class="col-sm px-1">
+                    <input type="text" class="form-control form-control-sm" id="barrio">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="municipio" class="col-sm-auto col-form-label px-0 text-center">Municipio</label>
+                  <div class="col-sm-5 px-1">
+                    <select class="form-control form-control-sm" id="municipio"></select>
+                  </div>
+                  <label for="comuna" class="col-sm-auto col-form-label px-0 text-center">Comuna</label>
+                  <div class="col-sm px-1">
+                    <select class="form-control form-control-sm" id="comuna"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="corregimiento" class="col-sm-auto col-form-label px-0 text-center">Corregimiento</label>
+                  <div class="col-sm-5 px-1">
+                    <select class="form-control form-control-sm" id="corregimiento"></select>
+                  </div>
+                  <label for="vereda" class="col-sm-auto col-form-label px-0 text-center">Vereda</label>
+                  <div class="col-sm px-1">
+                    <select class="form-control form-control-sm" id="vereda"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="telefono_contacto" class="col-sm-auto col-form-label px-0 text-center">Teléfono de contácto</label>
+                  <div class="col-sm-2 px-1">
+                    <input type="text" class="form-control form-control-sm" id="telefono_contacto">
+                  </div>
+                  <div class="col-sm-2 px-1">
+                    <input type="text" class="form-control form-control-sm" id="telefono_contacto_otro">
+                  </div>
+                  <label for="email" class="col-sm-auto col-form-label px-0 text-center">Correo electrónico</label>
+                  <div class="col-sm px-1">
+                    <input type="email" class="form-control form-control-sm" id="email">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="red_social" class="col-sm-auto col-form-label px-0 text-center">Red social</label>
+                  <div class="col-sm-5 px-1">
+                    <input type="text" class="form-control form-control-sm" id="red_social">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="parentesco_victima" class="col-lg-auto col-form-label px-0 text-center">Parentesco para con el víctima</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="parentesco_victima"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="otros_denunciados" class="col-sm-auto col-form-label px-0 text-center">Otros denunciados o solicitados  
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="otros_denunciados_si">SI</label>
+                      <input class="form-check-input " type="radio" name="otros_denunciados" id="otros_denunciados_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="otros_denunciados_no">NO</label>
+                      <input class="form-check-input" type="radio" name="otros_denunciados" id="otros_denunciados_no">
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-form-grey btn-sm" >Añadir</button>
+                </div>
+              </form>
+            </div>
+
+            <!--Botones inferiores-->
+            <div class="bg-white text-right mt-30">
+              <button class="btn btn-cancelar transparent my-2">Cancelar</button>
+              <button class="btn btn-orange normal100 my-2 mr-4">Guardar</button>
+            </div>
+          </div>
+
+          <div class="align-middle mt-4">
+            <!--Busqueda-->
+            <div class="form-group row mb-2">
+              <label for="buscar" class="col-sm-auto col-form-label pt-0 pr-0">
+                <!--Icono Busqueda-->
+                <i class="material-icons icon-size-30 text-orange">search</i>
+              </label>
+              <h2 class="font-size-20 text-orange">Nuevo Formulario</h2>
+              <div class="col-sm">
+                <select class="form-control form-control-sm" id="nuevo_formulario"></select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--Menu lateral izquierdo-->
+        <div class="col-md-2 p-0 mt-2">
+          <div class="px-3 mb-2">
+            <button type="button" class="btn btn-gray-small btn-block text-truncate ">Imprimir</button>
+            <button type="button" class="btn btn-gray-small btn-block text-truncate">Adjuntar</button>
+            <button type="button" class="btn btn-gray-small btn-block text-truncate">Programar</button>
+            <button type="button" class="btn btn-gray-small btn-block text-truncate">Generar informe</button>
+            <button type="button" class="btn btn-gray-small btn-block text-truncate">Archivar</button>
+          </div>
+          <button type="button" class="btn btn-orange medium btn-block text-truncate">Generar documento</button>
+          <div class="text-center">
+            <button type="button" class="btn btn-orange normal text-truncate mt-2" style="min-width: 40px;">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

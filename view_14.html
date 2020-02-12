@@ -156,10 +156,10 @@
             <!--Wizard-->
             <div class="row">
               <div class="col-md-3 pr-2 pl-2">
-                <div class="text-truncate wizard-step active">1. Datos generales</div>
+                <div class="text-truncate wizard-step">1. Datos generales</div>
               </div>
               <div class="col-md-3 pr-2 pl-2">
-                <div class="text-truncate wizard-step ">2. Datos denunciante</div>
+                <div class="text-truncate wizard-step">2. Datos denunciante</div>
               </div>
               <div class="col-md-3 pr-2 pl-2">
                 <div class="text-truncate wizard-step">3. Datos víctima</div>
@@ -171,7 +171,7 @@
                 <div class="text-truncate wizard-step">5. Datos denunciado</div>
               </div>
               <div class="col-md-3 pr-2 pl-2">
-                <div class="text-truncate wizard-step">6. Narración hechos</div>
+                <div class="text-truncate wizard-step active">6. Narración hechos</div>
               </div>
               <div class="col-md-3 pr-2 pl-2">
                 <div class="text-truncate wizard-step">7. Actuación comisaría</div>
@@ -179,46 +179,155 @@
             </div>
             <!--Form-->
             <div class="mt-4">
-              <h1 class="text-orange text-bold font-size-18">Datos generales</h1>
+              <h1 class="text-orange text-bold font-size-18">Narración de los hechos</h1>
               <form class="form-exp px-3 mt-2">
+                <!--Form ROW-->
                 <div class="form-group row">
-                  <label for="fecha_recepcion" class="col-sm-auto col-form-label px-0 text-center">Fecha de
-                    recepción</label>
+                  <label for="fecha_hechos" class="col-sm-auto col-form-label px-0 text-center">Fecha de
+                    los hechos</label>
                   <div class="col-sm-2 px-1">
-                    <input type="date" class="form-control form-control-sm" id="fecha_recepcion">
+                    <input type="date" class="form-control form-control-sm" id="fecha_hechos">
                   </div>
                   <label for="hora" class="col-sm-auto col-form-label px-0 text-center">Hora</label>
                   <div class="col-sm-2 px-1">
                     <input type="time" class="form-control form-control-sm" id="hora">
                   </div>
-                  <label for="municipio" class="col-lg-auto col-form-label px-0 text-center">Municipio</label>
+                  <label for="lugar_hechos" class="col-lg-auto col-form-label px-0 text-center">Lugar de
+                    los hechos</label>
                   <div class="col-lg px-1">
-                    <select class="form-control form-control-sm" id="municipio"></select>
+                    <select class="form-control form-control-sm" id="lugar_hechos"></select>
                   </div>
                 </div>
+                <!--Form ROW-->
                 <div class="form-group row">
-                  <label for="area_geo" class="col-sm-auto col-form-label px-0 text-center">Área geográfica</label>
-                  <div class="col-sm px-1">
-                    <select class="form-control form-control-sm" id="area_geo"></select>
+                  <label for="municipio" class="col-sm-auto col-form-label px-0 text-center">Municipio</label>
+                  <div class="col-sm-5 px-1">
+                    <select class="form-control form-control-sm" id="municipio"></select>
                   </div>
-                  <label for="mp" class="col-sm-auto col-form-label px-0 text-center">MP</label>
+                  <label for="comuna" class="col-sm-auto col-form-label px-0 text-center">Comuna</label>
                   <div class="col-sm px-1">
-                    <input type="text" class="form-control form-control-sm" id="mp">
+                    <select class="form-control form-control-sm" id="comuna"></select>
                   </div>
-                  <label for="sim" class="col-sm-auto col-form-label px-0 text-center">SIM</label>
-                  <div class="col-sm px-1">
-                    <input type="text" class="form-control form-control-sm" id="sim">
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="corregimiento" class="col-sm-auto col-form-label px-0 text-center">Corregimiento</label>
+                  <div class="col-sm-5 px-1">
+                    <select class="form-control form-control-sm" id="corregimiento"></select>
                   </div>
-                  <label for="nc" class="col-sm-auto col-form-label px-0 text-center">NC</label>
+                  <label for="vereda" class="col-sm-auto col-form-label px-0 text-center">Vereda</label>
                   <div class="col-sm px-1">
-                    <input type="text" class="form-control form-control-sm" id="nc">
+                    <select class="form-control form-control-sm" id="vereda"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="tipificacion_conducta" class="col-sm-auto col-form-label px-0 text-center">Tipificación de la conducta</label>
+                  <div class="col-sm px-1">
+                    <input type="text" class="form-control form-control-sm" id="tipificacion_conducta">
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="narracion_hechos" class="col-sm-auto col-form-label px-0 text-center">Narración de los hechos</label>
+                  <div class="col-sm px-1">
+                    <textarea class="form-control" id="narracion_hechos" rows="4"></textarea>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="base_legal" class="col-sm-auto col-form-label px-0 text-center">Base legal </label>
+                  <div class="col-sm px-1">
+                    <textarea class="form-control" id="base_legal" rows="3"></textarea>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="pregunta_1" class="col-sm-auto col-form-label px-0 text-center">¿El caso de violencia se dió en el contexto familiar?  
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check pl-2">
+                      <label class="form-check-label " for="pregunta_1_si">SI</label>
+                      <input class="form-check-input " type="radio" name="pregunta_1" id="pregunta_1_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="pregunta_1_no">NO</label>
+                      <input class="form-check-input" type="radio" name="pregunta_1" id="pregunta_1_no">
+                    </div>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="pregunta_2" class="col-sm-auto col-form-label px-0 text-center">¿Ha denunciado con anterioridad a la misma persona?  
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check pl-2">
+                      <label class="form-check-label " for="pregunta_2_si">SI</label>
+                      <input class="form-check-input " type="radio" name="pregunta_2" id="pregunta_2_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="pregunta_2_no">NO</label>
+                      <input class="form-check-input" type="radio" name="pregunta_2" id="pregunta_2_no">
+                    </div>
+                  </div>
+                  <label for="pregunta_2_veces" class="col-lg-auto col-form-label px-0 text-center">¿Cuántas veces?</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="pregunta_2_veces"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="pregunta_3" class="col-sm-auto col-form-label px-0 text-center">¿Lo ha denunciado por el mismo hecho?  
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check pl-2">
+                      <label class="form-check-label " for="pregunta_3_si">SI</label>
+                      <input class="form-check-input " type="radio" name="pregunta_3" id="pregunta_3_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="pregunta_3_no">NO</label>
+                      <input class="form-check-input" type="radio" name="pregunta_3" id="pregunta_3_no">
+                    </div>
+                  </div>
+                  <label for="pregunta_3_veces" class="col-lg-auto col-form-label px-0 text-center">¿Cuántas veces?</label>
+                  <div class="col-lg px-1">
+                    <select class="form-control form-control-sm" id="pregunta_3_veces"></select>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="pregunta_4" class="col-sm-auto col-form-label px-0 text-center">¿Sabe si dicha persona tiene algún procedimiento judicial abierto?  
+                  </label>
+                  <div class="col-sm-auto px-1">
+                    <div class="form-check form-check-inline form-exp-check pl-2">
+                      <label class="form-check-label " for="pregunta_4_si">SI</label>
+                      <input class="form-check-input " type="radio" name="pregunta_4" id="pregunta_4_si">
+                    </div>
+                    <div class="form-check form-check-inline form-exp-check">
+                      <label class="form-check-label " for="pregunta_4_no">NO</label>
+                      <input class="form-check-input" type="radio" name="pregunta_4" id="pregunta_4_no">
+                    </div>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="observaciones" class="col-sm-auto col-form-label px-0 text-center">Observaciones al respecto</label>
+                  <div class="col-sm px-1">
+                    <textarea class="form-control" id="observaciones" rows="2"></textarea>
+                  </div>
+                </div>
+                <!--Form ROW-->
+                <div class="form-group row">
+                  <label for="pretenciones" class="col-sm-auto col-form-label px-0 text-center">Pretenciones</label>
+                  <div class="col-sm px-1">
+                    <textarea class="form-control" id="pretenciones" rows="3"></textarea>
                   </div>
                 </div>
               </form>
             </div>
 
             <!--Botones inferiores-->
-            <div class="bg-white text-right mt-80">
+            <div class="bg-white text-right mt-30">
               <button class="btn btn-cancelar transparent my-2">Cancelar</button>
               <button class="btn btn-orange normal100 my-2 mr-4">Guardar</button>
             </div>
